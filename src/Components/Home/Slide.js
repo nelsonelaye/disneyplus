@@ -78,7 +78,7 @@ const Caro =styled(Slider)  `
 
 const SlideCon =styled.div  `
     cursor:pointer;
-  
+    height:50vh;
 
 
     img{

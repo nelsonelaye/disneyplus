@@ -2,7 +2,7 @@ import React from 'react'
 import  {useState, useEffect} from "react"
 import styled from "styled-components"
 import Data from "../Data.json"
-import {useParams} from "react-router-dom"
+import {useParams, Link} from "react-router-dom"
 
 
 const Detail =() => {
@@ -52,8 +52,14 @@ const Detail =() => {
                     </Controls>
                     <SubTitle>{render.subTitle} </SubTitle>
                     <Description> {render.description} </Description>
+                    
                 </Content>
-            
+                <Link to="/">
+                    <Back>
+                        <img src="/Assets/images/backward.png"  />
+                    </Back>
+                </Link>
+                
         </Background>
         }
     </div>
@@ -65,7 +71,7 @@ export default Detail;
 const Background = styled.div`
 
     background-size:cover;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     color:white;
     position:relative;
@@ -93,6 +99,7 @@ const Content = styled.div`
     display:flex;
     flex-direction: column;
     margin: 0px 50px;
+   
 `
 
 const TitleImg = styled.img`
@@ -162,5 +169,27 @@ const SubTitle = styled.p`
 const Description = styled.p`
     margin-top: 30px;
     font-weight:500px;
+`
+
+const Back = styled.div`
+    width: 50px;
+    height:50px;
+    display:flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    cursor:pointer;
+
+
+    img{
+      width: 100%;
+      height: 100%;
+  
+    }
 `
 

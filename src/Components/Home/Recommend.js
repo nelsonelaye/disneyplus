@@ -10,7 +10,7 @@ const  Recommend = () => {
             <h3 style={{
                 "color":"#fff",
                 "font-weight": 700,
-                "z-index": "5px"
+                "margin-left": "30px"
         }}>Recommend for you </h3>
             <Wrapper>
                 <ImageWrap>

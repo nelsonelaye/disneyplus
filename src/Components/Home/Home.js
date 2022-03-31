@@ -33,7 +33,6 @@ const Container = styled.div`
         background-image:url("/Assets/images/home-background.png");
         background-size:cover;
         background-repeat:no-repeat;
-        
-        
+        z-index:-10;  
     }
 `

@@ -10,6 +10,13 @@ function Header (){
         setToggle(!toggle)
     }
 
+    // <Icon src="/Assets/images/home-icon.svg" alt="home" />
+    // <Icon src="/Assets/images/search-icon.svg" alt="search" />
+    // <Icon src="/Assets/images/series-icon.svg" alt="series" />
+    // <Icon src="/Assets/images/movie-icon.svg" alt="new movies" />
+    // <Icon src="/Assets/images/original-icon.svg" alt="entertainment news" />
+    // <Icon src="/Assets/images/watchlist-icon.svg" alt="watchlist" />
+
     return(
         <Container>
             <Wrap>
@@ -18,28 +25,28 @@ function Header (){
                     <Navs>
                        <Link to="/"> 
                             <Nav>
-                                <Icon src="/Assets/images/home-icon.svg" alt="home" />
+                               
                                 <span>Home</span>
                             </Nav>
                         </Link>
                         <Nav>
-                            <Icon src="/Assets/images/search-icon.svg" alt="search" />
+                            
                             <span>Search</span>
                         </Nav>
                         <Nav>
-                            <Icon src="/Assets/images/movie-icon.svg" alt="new movies" />
-                            <span>Latest Movies</span>
+                            
+                            <span>Latest</span>
                         </Nav>
                         <Nav>
-                            <Icon src="/Assets/images/series-icon.svg" alt="series" />
+                            
                             <span>Series</span>
                         </Nav>
                         <Nav>
-                            <Icon src="/Assets/images/original-icon.svg" alt="entertainment news" />
+                            
                             <span>E-News</span>
                         </Nav>
                         <Nav>
-                            <Icon src="/Assets/images/watchlist-icon.svg" alt="watchlist" />
+                            
                             <span>Watchlist</span>
                         </Nav>
                     </Navs>
@@ -60,7 +67,7 @@ function Header (){
 export default Header;
 
 const Container = styled.div`
-    background-color: #123456;
+    background-color: #202332;
     width: 100%;
     height: 80px;
     display:flex;
@@ -105,7 +112,7 @@ const Nav = styled.div`
     color:#fff;
     display:flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 30px;
     cursor: pointer;
     position: relative;
 
