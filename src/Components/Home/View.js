@@ -92,7 +92,7 @@ const Wrap = styled.div`
         height:100%;
         object-fit:cover;
         opacity:0;
-        transition: all .35s; ease-in;
+        transition: all .35s ease-in;
 
         :hover{
             opacity:1;
